@@ -3,9 +3,17 @@
     padding: 0px; 
     box-sizing: border-box;
 }
+.containerOfcontainerbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right top, #5182cc, #4c6cb8, #6d80c3, #4e5ebc, #a3a9e1);
+    height: 950px;
+}
 .container{
     height: auto;
-    width:100vw;
+    width:100%;
+    background-image: inear-gradient(to right top, #285aa6, #4f6db5, #6d80c3, #8994d2, #a3a9e1);
 }
 .navBar{
     display: flex;
@@ -66,15 +74,25 @@
     text-align: center;
     font-size: 1.8rem;
     font-family: Tahoma, sans-serif;
+    line-height: 1.6;
 }
 .containerbox{
+    background-image: linear-gradient(to right top, #306dc7, #4f6db5, #6d80c3, #8994d2, #abb0df);
     width: 80%;
-    margin: auto;
+    /* margin: auto; */
     box-shadow: 0px 3px 6px 2px ;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     box-sizing: content-box;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    transition: all 0.3s ease-in;
+    height: 900px;
+}
+.containerbox:hover{
+    transform: translateY(-4px);
 }
 .item{
     display: flex;
@@ -93,6 +111,9 @@
     left: 0px;
     background-color: rgba(63, 60, 60, 0.728);
     border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
